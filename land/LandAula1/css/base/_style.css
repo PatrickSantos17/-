@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 100%;
+    background:linear-gradient(60deg, rgb(204, 164, 170) 40%, white 60%);
+    height: 100vh;
+}
+
+.cabecalho{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+padding: 24px;
+}
+
+.cabecalho-menu-item{
+    text-decoration: none;
+    color: var(--cor);
+    /* color: rgb(167, 76, 170); */
+}
+.cabecalho-menu-item:hover{
+    font-size: 18px;
+    font-weight: bold;
+}
+.cabecalho-imagem{
+    height: 72px;
+}
+
+.cabecalho-menu{
+  display: flex;
+  gap: 32px;  
+  font-family: sans-serif;
+}
+
+.conteudo{
+    margin-bottom: 48px;
+    border-top: 10px solid black;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+}
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+.conteudo-principal-titulo{
+    font-family: 'righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+}
+
+.conteudo-principal-subtitulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.conteudo-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 10px;
+}
+
+.conteudo-secundario-titulo{
+    border-top: 0.4px solid black;
+    padding-top: 48px;
+    font-family: 'righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+
+}
+
+.conteudo-secundario-itens{
+    font-family: "Ojuju", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+    font-weight:550;
+    font-style: normal;
+    position:inline;
+    float: right;
+    list-style-type: none;
+    padding: 10px;
+
+}
+
+.rodape{
+    width: 100%;
+    height: 100;
+    padding: 50px;
+    border-top: 10px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.rodape-imagem{
+    height: 48px;
+    /* display: block;
+    margin: 0 auto; */
+    
+}
+.imagem-instagram{
+    /* padding: 30px; */
+    height: 30px;
+}
+.txt_instagram{
+    color: var(--cor);
+}
+.grid{
+    width: 980px;
+    height: 600 px;
+    
+    /* background-color: rgb(227, 227, 233); */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    /* repete 4 vezes uma fração */
+    grid-template-rows: 50% 50%;
+    align-items: center;
+}
+
+.txt_unhas{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    padding: 25%;
+    /* height: 100vh; */
+    text-align: center;
+    justify-content: center;
+    color: black;
+}
+
+.img_unhas{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    height:175px;
+    width: 175px;
+    object-fit: cover; /* Ajusta o dimensionamento da imagem conforme necessário */
+    cursor: pointer; /* Adiciona um cursor de mão para indicar que é clicável */
+    transition: transform 0.3s ease-in-out;
+    border-radius: 15px;
+    margin: 10px;
+    place-self: center;
+}
+  
+  .img_unhas:hover{
+    /* Aplica uma transformação (aumento de escala) no hover */
+    transform: scale(1.2);
+  }
+
+
+.txt_sobrancelhas{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    padding: 25%;
+    /* height: 100vh; */
+    text-align: center;
+    justify-content: center;
+    color: black;
+}
+
+.img_sobrancelhas{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    height: 175px;
+    width: 175px;
+    object-fit: cover; /* Ajusta o dimensionamento da imagem conforme necessário */
+    cursor: pointer; /* Adiciona um cursor de mão para indicar que é clicável */
+    transition: transform 0.3s ease-in-out;
+    border-radius: 15px;
+    place-self: center;
+}
+.img_sobrancelhas:hover{
+    /* Aplica uma transformação (aumento de escala) no hover */
+    transform: scale(1.2);
+  }
+
+
+.txt_cabelos{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    padding: 25%;
+    /* height: 100vh; */
+    text-align: center;
+    justify-content: center;
+    color: black;
+}
+
+.img_cabelos{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    height: 175px;
+    width: 175px;
+    object-fit: cover; /* Ajusta o dimensionamento da imagem conforme necessário */
+    cursor: pointer; /* Adiciona um cursor de mão para indicar que é clicável */
+    transition: transform 0.3s ease-in-out;
+    border-radius: 15px;
+    place-self: center;
+}
+.img_cabelos:hover{
+    /* Aplica uma transformação (aumento de escala) no hover */
+    transform: scale(1.2);
+  }
+
+
+.txt_depilacao{
+    grid-column-start: 4;
+    grid-row-start: 1;
+    padding: 25%;
+    /* height: 100vh; */
+    text-align: center;
+    justify-content: center;
+    color: black;
+}
+
+.img_depilacao{
+    grid-column-start: 4;
+    grid-row-start: 2;
+    height: 175px;
+    width: 175px;
+    object-fit: cover; /* Ajusta o dimensionamento da imagem conforme necessário */
+    cursor: pointer; /* Adiciona um cursor de mão para indicar que é clicável */
+    transition: transform 0.3s ease-in-out;
+    border-radius: 15px;
+    place-self: center;
+}
+
+.img_depilacao:hover{
+    /* Aplica uma transformação (aumento de escala) no hover */
+    transform: scale(1.2);
+  }
